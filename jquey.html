@@ -33,6 +33,7 @@
                 });
                 $("#show").click(function(){
                   $("p").show();
+             
                 });
               });
 
@@ -41,6 +42,8 @@
                     $('#div1').fadeIn();
                     $('#div2').fadeIn("slow");
                     $('#div3').fadeIn(3000);
+                    $("div").animate({left: '250px'});
+
                 });
               });
             
@@ -48,10 +51,14 @@
     <div id="div1" style="width:80px;height:80px;display:none;background-color:rgb(31, 9, 9);"></div><br>
     <div id="div2" style="width:80px;height:80px;display:none;background-color:green;"></div><br>
     <div id="div3" style="width: 80px;height:80px;display: none;background-color: blue;"></div><br>
-    <p>this is paragraph 1</p>
-    <p>fade the paragraph</p>
-    <button> click to fade box</button><br><br>
+    
+    <!-- <p>this is paragraph 1</p>
+    <p>fade the paragraph</p> -->
+    
+    <button>start animation</button>
     <button id="hide">hide</button>
     <button id="show">show</button>
+    <button> click to fade box</button><br><br>
+    <div style="background:#98bf21;height:100px;width:100px;position:absolute;"></div><br><br>
 </body>
 </html>
