@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <!-- <link rel="stylesheet" href="index.js"> -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <form action="">
+        <input type="text" name="nam" id="p1" placeholder="password"><br><br>
+        <input type="text" name="namm" id="p2" placeholder="new password"><br><br>
+        
+        <button type="button" id="login">sign up</button>
+    </form>
+
+    <script>
+        $("#login").click(function(event){
+           
+            event.preventDefault();
+
+            var pas1 = $("#p1").val();
+            var pas2 = $("#p2").val();
+
+            if(pas1 != "" && pas2 != ""){
+                if(pas1 == pas2){
+                    alert("Passwords match");
+                }else{
+                    alert("Passwords do not match");
+                }
+            }else{
+                alert("Please enter your password");
+            }
+        });
+    </script>
+</body>
+</html>
