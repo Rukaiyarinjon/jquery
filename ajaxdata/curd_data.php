@@ -1,5 +1,5 @@
 <?php
-$db = new mysqli('localhost','root','',' jquery_evidance');
+$db = new mysqli('localhost','root','','jquery_evidance');
 //for save
 if(isset($_POST['saveemail'])){
     $email = trim($_POST['saveemail']);
